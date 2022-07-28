@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+input,
+select {
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 4px;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+label {
+  font-size: 0.875rem;
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235, 235, 235);
+}
+
+td {
+  text-align: center;
+}
+
+tr.outlay td {
+  background-color: #fef2f2;
+}
+
+tr.income td {
+  background-color: #f0fdf4;
+}
+
+button {
+  background: #16a34a;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 8px 24px;
+  color: #fff;
+}
+
+button:hover {
+  background: #84cc16;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.bill-container {
+  min-width: 526px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.dialog-mask {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  opacity: 0.5;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.add-form-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.p4 {
+  padding: 1rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.border-1 {
+  border: 1px solid #ddd;
+}
+
+/* .new {
+  position: relative;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count: 9;
+  animation-direction: alternate;
+} */
+
+.new > td:nth-child(1) {
+  position: relative;
+}
+
+.new > td:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+
+/* @keyframes slidein {
+  from {
+    outline: 2px solid #a3e635;
+  }
+
+  to {
+    outline: 2px solid #65a30d;
+  }
+} */

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XMind Cashbook</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="flex justify-center">
+    <div class="flex flex-column gap-2 bill-container">
+      <h1>记账本</h1>
+      <div class="flex justify-between">
+        <div class="flex gap-4">
+          <div>
+            <label for="date-filter">日期:</label>
+            <select id="date-filter"></select>
+          </div>
+          <div>
+            <label for="category-filter">分类:</label>
+            <select id="category-filter">
+              <option value="" selected>全部</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <button id="add-cash-button">添加账单</button>
+        </div>
+      </div>
+      <div class="flex">
+        <table>
+          <thead>
+            <tr>
+              <th>时间</th>
+              <th>类型</th>
+              <th>分类</th>
+              <th>金额</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="dialog-mask fixed hidden"></div>
+  <div class="add-form-container fixed hidden">
+    <form class="bg-white p4 rounded-lg">
+      <fieldset class="flex flex-column gap-2 p-4 z-30 border-1">
+        <legend>添加账单</legend>
+        <div>
+          <label for="time">时间: </label>
+          <input type="datetime-local" name="time" id="time" required>
+        </div>
+        <div>
+          <label for="category">分类: </label>
+          <select name="category" id="category" required>
+            <option value="" selected>选择分类</option>
+          </select>
+        </div>
+        <div>
+          <label for="amount">金额: </label>
+          <input type="number" name="amount" id="amount" step="100" placeholder="支出/收入金额" required>
+        </div>
+        <div class="flex justify-center mt-4">
+          <button id="addBillButton" type="submit">添加</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
