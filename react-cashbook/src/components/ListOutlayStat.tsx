@@ -2,6 +2,7 @@ import React from "react";
 import { Bill } from "../types";
 import { useSelector } from "react-redux";
 import type { RootState } from "../state/store";
+import { amountFormat } from "../utils/helper";
 
 interface CategoryStat {
   category: string;
@@ -40,7 +41,7 @@ const ListOutlayStat = ({ bills }: { bills: Bill[] }) => {
             {categories.find((c) => s.category === c.id)?.name as string}
           </td>
           <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900">
-            {s.amount}
+            {amountFormat(s.amount)}
           </td>
         </tr>
       ))}
