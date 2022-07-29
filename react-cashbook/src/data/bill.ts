@@ -1,4 +1,4 @@
-const bill = `type,time,category,amount
+const billCsv = `type,time,category,amount
 0,1561910400000,8s0p77c323,5400
 0,1561910400000,0fnhbcle6hg,1500
 0,1563897600000,3tqndrjqgrg,3900
@@ -46,4 +46,4 @@ const bill = `type,time,category,amount
 1,1577345477581,5il79e11628,2000
 1,1577345638784,1vjj47vpd28,2000`;
 
-export default bill;
+export default billCsv;

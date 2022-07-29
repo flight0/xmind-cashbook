@@ -1,4 +1,4 @@
-const category = `id,type,name
+const categoryCsv = `id,type,name
 1bcddudhmh,0,车贷
 hc5g66kviq,0,车辆保养
 8s0p77c323,0,房贷
@@ -11,4 +11,4 @@ s73ijpispio,1,工资
 1vjj47vpd28,1,股票投资
 5il79e11628,1,基金投资`;
 
-export default category;
+export default categoryCsv;
