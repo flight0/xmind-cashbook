@@ -35,7 +35,7 @@ const ListOutlayStat = ({ bills }: { bills: Bill[] }) => {
     <>
       {stat.map((s) => (
         <tr className=" border-gray-100 bg-white" key={s.category}>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900"></td>
+          <th scope="row" colSpan={2}></th>
           <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900"></td>
           <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900">
             {categories.find((c) => s.category === c.id)?.name as string}

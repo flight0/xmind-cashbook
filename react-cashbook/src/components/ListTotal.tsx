@@ -19,8 +19,7 @@ const ListTotal = ({ bills }: { bills: Bill[] }) => {
   return (
     <>
       <tr className="border-gray-100 bg-white">
-        <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900"></td>
-        <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900"></td>
+        <th scope="row" colSpan={2}></th>
         <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900 font-medium">
           总收入
         </td>
@@ -29,8 +28,7 @@ const ListTotal = ({ bills }: { bills: Bill[] }) => {
         </td>
       </tr>
       <tr className=" border-gray-100 bg-white">
-        <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900"></td>
-        <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900"></td>
+        <th scope="row" colSpan={2}></th>
         <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900 font-medium">
           总支出
         </td>
